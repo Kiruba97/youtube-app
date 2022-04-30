@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  place-items: left;
+  height: 100vh;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #4f29c2,#2d88f0,#1d3995);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  max-width: 1200px;
+  margin-block: 0.4rem;
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;	
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(10rem, calc(20rem + 10vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
+.container .card:hover {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+    cursor:pointer
+}

@@ -1,0 +1,13 @@
+.rcorners1 {
+    border-radius: 25px;
+    background: linear-gradient(to right, #6036de,#2d88f0,#1d3995);
+    padding: 30px;
+    width: 900px;
+    height: 100px;
+  }
+
+.search-box{
+    margin-top: 20px;
+    margin-bottom :20px
+}
+
